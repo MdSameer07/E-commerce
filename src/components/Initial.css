@@ -1,0 +1,15 @@
+.Initial{
+    margin-top:2%;
+    display:flex;
+    margin-left:9%;
+    justify-content:space-between;
+    width:80%;
+    align-items:center;
+}
+
+.CP-button{
+    background-color:blue;
+    color:white;
+    padding:10px 10px 10px 10px;
+    border-radius:5px;
+}

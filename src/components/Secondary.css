@@ -1,0 +1,13 @@
+.Products-list{
+    margin-top:2%;
+    flex-wrap:wrap;
+    display:flex;
+    height:800px;
+}
+
+.each-product{
+    width:33%;
+    display:flex;
+    border:1px solid grey;
+    justify-content:center
+}

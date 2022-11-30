@@ -1,0 +1,7 @@
+.Nav{
+    width:10%;
+    display:flex;
+    margin-left:8.5%;
+    margin-top:2%;
+    justify-content: space-around;
+}
