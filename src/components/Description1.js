@@ -1,9 +1,9 @@
-const Description1 = () =>{
+const Description1 = (props) =>{
     return(
         <>
-            <h3>Bottle</h3>
-            <p>Bottle Description</p>
-            <p>Price : <strong>$330</strong></p>
+            <h3>{props.name}</h3>
+            <p>{props.description}</p>
+            <p>Price : <strong>${props.price}</strong></p>
         </>
     )
 }

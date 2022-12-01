@@ -1,11 +1,11 @@
 import './Description2.css'
 
-const Description2 = () =>{
+const Description2 = (props) =>{
     return (
         <div className = 'desc2'>
-            <h3>Bottle</h3>
-            <p>Bottle Description</p>
-            <p>Price : <strong>$330</strong></p>
+            <h3>{props.name}</h3>
+            <p>{props.description}</p>
+            <p>Price : <strong>${props.price}</strong></p>
             <p>In Stock</p>
             <button className = 'ATC-button'>Add to cart</button>
         </div>
