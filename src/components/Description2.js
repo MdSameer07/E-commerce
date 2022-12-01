@@ -6,6 +6,7 @@ const Description2 = (props) =>{
             <h3>{props.name}</h3>
             <p>{props.description}</p>
             <p>Price : <strong>${props.price}</strong></p>
+            <p>Quantity: {props.quantity}</p>
             <p>In Stock</p>
             <button className = 'ATC-button'>Add to cart</button>
         </div>

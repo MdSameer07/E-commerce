@@ -18,7 +18,7 @@ export const Products = () =>{
       return (
         <div className = 'Product'>
             <Image2 src = {data.data.image} alt = {data.data.description} width = '500px' height='500px'></Image2>
-            <Description2 name = {data.data.name} description = {data.data.description} price = {data.data.price}></Description2>
+            <Description2 name = {data.data.name} description = {data.data.description} price = {data.data.price} quantity = {data.data.quantity}></Description2>
         </div>
       )
 }
