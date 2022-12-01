@@ -1,3 +1,5 @@
+import './Description1.css'
+
 const Description1 = (props) =>{
     return(
         <>
