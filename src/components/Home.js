@@ -1,12 +1,11 @@
-
-import Initial from './Initial'
-import Secondary from './Secondary'
+import ProductsHeader from './ProductsHeader'
+import ProductsBody from './ProductsBody'
 
 export const Home = () =>{
     return (
     <div>
-        <Initial/>
-        <Secondary/>
+        <ProductsHeader/>
+        <ProductsBody/>
     </div>
     )
 }
