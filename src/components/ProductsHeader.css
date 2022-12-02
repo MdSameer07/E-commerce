@@ -1,4 +1,4 @@
-.Initial{
+.header{
     margin-top:2%;
     display:flex;
     margin-left:9%;
@@ -7,7 +7,7 @@
     align-items:center;
 }
 
-.CP-button{
+.cp-button{
     background-color:blue;
     color:white;
     padding:10px 10px 10px 10px;
