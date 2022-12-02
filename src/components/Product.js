@@ -4,7 +4,6 @@ import './Product.css'
 import { NavLink } from 'react-router-dom'
 
 const Product = (product) =>{
-    // console.log(product.data.name)
     return (
         <NavLink className = 'Single-Product' to={`/products/${product.data.id}`}>
             <Image id = {product.data.id} src = {product.data.image} alt = {product.data.description} width = '100%'/>
