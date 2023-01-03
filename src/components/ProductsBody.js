@@ -7,10 +7,11 @@ const ProductsBody = () =>{
     if(isLoading){
         return <h2>Loading..</h2>
       }
-      if(isError){
-        return <h2>{error.message}</h2>
-      }
-      return (
+    if(isError){
+      return <h2>{error.message}</h2>
+    }
+    return (
+      <div className = 'whole'>
         <div className = 'Products-list'>
         {data.data.map((product)=>{
             return (
@@ -18,7 +19,8 @@ const ProductsBody = () =>{
             )
         })}
         </div>
-      )
+      </div>
+    )
 }
 
 export default ProductsBody

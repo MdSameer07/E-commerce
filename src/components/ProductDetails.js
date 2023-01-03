@@ -20,7 +20,6 @@ export const ProductDetails = () =>{
         setImage(data.data.image)
       }
       
-
       const settingVariantImage = (image) =>{
         setImage(image)
       }

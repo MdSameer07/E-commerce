@@ -1,5 +1,6 @@
 import './Description2.css'
 import {GetVariants} from './GetVariants'
+import {AddToCart} from './AddToCart'
 
 const Description2 = (props) =>{
     return (
@@ -11,8 +12,8 @@ const Description2 = (props) =>{
             {props.data.data.quantity>10 && <p>Available</p>}
             {props.data.data.quantity<=10 && <p>Selling Fast</p>}
             <p>Quantity : {props.data.data.quantity}</p>
-            <p><GetVariants variants = {props.data.data.variants} onClick = {props.onClick}/></p>
-            <button className = 'ATC-button'>Add to cart</button>
+            <GetVariants variants = {props.data.data.variants} onClick = {props.onClick}/>
+            <AddToCart props = {props}/>
         </div>
     )
 }

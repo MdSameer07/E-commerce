@@ -1,7 +1,14 @@
 .Nav{
-    width:10%;
     display:flex;
-    margin-left:8.5%;
+    margin-left:9.5%;
     margin-top:2%;
-    justify-content: space-around;
+    margin-right:10.8%;
+    justify-content: space-between;
 }
+
+.Initial{
+    width:16%;
+    display:flex;
+    justify-content: space-between;
+}
+

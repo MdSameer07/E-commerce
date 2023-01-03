@@ -1,5 +1,6 @@
 import {NavLink} from 'react-router-dom'
 import './NavBar.css'
+import {Cart} from './Cart'
 
 export const NavBar = () =>{
     const navStyleLink = ({isActive})=>{
@@ -10,8 +11,11 @@ export const NavBar = () =>{
     }
     return (
         <nav className = 'Nav'>
-            <NavLink style = {navStyleLink} to='/'>Home</NavLink>
-            <NavLink style = {navStyleLink} to='./products/1'>Products</NavLink>
+            <div className = 'Initial'>
+                <NavLink style = {navStyleLink} to='/'>Home</NavLink>
+                <NavLink style = {navStyleLink} to='./products/1'>Products</NavLink>
+            </div>
+            <Cart/>
         </nav>
     )
 }
