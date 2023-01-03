@@ -1,0 +1,27 @@
+.AddRemove{
+    width:15%;
+    display:flex;
+    margin-top:5%;
+    justify-content: space-between;
+}
+
+.Remove,.Add,.Quantity{
+    size:25px;
+    font-weight:bold;
+}
+
+.Remove,.Add{
+    cursor:pointer;
+    padding:4px 4px 4px 4px;
+    border:1px solid blue;
+    background-color: blue;
+    color:white;
+}
+
+.ATC-button{
+    cursor:pointer;
+}
+
+.Quantity{
+    margin-top:7%;
+}

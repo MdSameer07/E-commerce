@@ -1,0 +1,12 @@
+.Image{
+    width:60%;
+    margin-left:10%;
+}
+
+.Image > img{
+    width:100%;
+}
+
+.Description{
+    margin-left:10%;
+}
