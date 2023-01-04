@@ -2,7 +2,7 @@
     width:15%;
     display:flex;
     margin-top:5%;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .Remove,.Add,.Quantity{
@@ -24,4 +24,6 @@
 
 .Quantity{
     margin-top:7%;
+    margin-left:7%;
+    margin-right:7%;
 }
