@@ -2,7 +2,7 @@ import {useQuery} from 'react-query'
 import axios from 'axios'
 
 const fetchProductsData = () =>{
-    return axios.get('https://obscure-refuge-62167.herokuapp.com/products')
+    return axios.get('http://localhost:4000/Products')
 }
 
 export const useProductsData = () =>{
