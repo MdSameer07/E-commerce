@@ -1,8 +1,8 @@
 import {useProductsData} from '../hooks/useProductsData'
 import Product from './Product'
-import './Secondary.css'
+import './ProductsBody.css'
 
-const Secondary = () =>{
+const ProductsBody = () =>{
     const {isLoading,data,isError,error} = useProductsData()
     if(isLoading){
         return <h2>Loading..</h2>
@@ -14,13 +14,11 @@ const Secondary = () =>{
         <div className = 'Products-list'>
         {data.data.map((product)=>{
             return (
-                <div className = 'each-product'><Product key = {product.id} name = {product.name} 
-                image = {product.image} description = {product.description} 
-                quantity = {product.quantity} price = {product.price}/></div>
+              <div className = 'each-product'><Product data = {product}/></div>
             )
         })}
         </div>
       )
 }
 
-export default Secondary
+export default ProductsBody

@@ -1,14 +1,14 @@
-import Image1 from './Image1'
+import Image from './Image'
 import Description1 from './Description1'
 import './Product.css'
+import { NavLink } from 'react-router-dom'
 
-const Product = (props) =>{
+const Product = (product) =>{
     return (
-        <div className = 'Single-Product'>
-            {/* <div>{props.description}</div> */}
-            <Image1 src = {props.image} alt = {props.description} width = '200px' height ='200px'/>
-            <Description1 name = {props.name} description = {props.description} price = {props.price}/>
-        </div>
+        <NavLink className = 'Single-Product' to={`/products/${product.data.id}`}>
+            <Image id = {product.data.id} src = {product.data.image} alt = {product.data.description} width = '100%'/>
+            <Description1 name = {product.data.name} description = {product.data.description} price = {product.data.price}/>
+        </NavLink>
     )
 }
 
