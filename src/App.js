@@ -4,11 +4,13 @@ import {NavBar} from './components/NavBar'
 import {Home} from './components/Home'
 import {ProductDetails} from './components/ProductDetails'
 import {QueryClientProvider,QueryClient} from 'react-query'
+import { RecoilRoot } from 'recoil'
 
 const queryClient = new QueryClient()
 
 function App() {
   return (
+    <RecoilRoot>
     <QueryClientProvider client = {queryClient}>
     <>
       <NavBar/>
@@ -18,6 +20,7 @@ function App() {
       </Routes>
     </>
     </QueryClientProvider>
+    </RecoilRoot>
   );
 }
 
